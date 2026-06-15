@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Aluno</title>
+</head>
+
+<body>
+    <form method="post" action="cadastro.php">
+        <label>Nome:</label>
+        <input type="text" name="nome" placeholder="Digite seu nome" required>
+        <br><br>
+        <label>Email:</label>
+        <input type="email" name="email" placeholder="exemplo@exemplo.com" required>
+        <br><br>
+        <label>Idade:</label>
+        <input type="number" name="idade" placeholder="18" required>
+        <br><br>
+        <label>Escolha seu curso:</label>
+        <select name="cursos">
+            <option value="web">Programador Web (240 horas)</option>
+            <option value="sistemas">Programador de Sistemas (200 horas)</option>
+            <option value="instagram">Instagram para Negócios (36 horas)</option>
+        </select>
+        <br><br>
+        <button type="submit">Inscrever-se</button>
+    </form>
+
+</body>
+
+</html>
