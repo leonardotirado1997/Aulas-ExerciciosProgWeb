@@ -2,4 +2,13 @@
 
 session_start();
 
-echo "Bem-vindo, " . $_SESSION['usuario'];
+if(!isset($_SESSION['usuario'])){
+
+    echo "Acesso negado";
+    exit;
+
+}
+
+echo "Bem-vindo ao sistema";
+
+?>
